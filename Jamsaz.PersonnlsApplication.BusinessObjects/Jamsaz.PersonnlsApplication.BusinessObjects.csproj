@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1F0557A0-F9DB-435A-9AF9-352FC3A7E609}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jamsaz.PersonnlsApplication.BusinessObjects</RootNamespace>
+    <AssemblyName>Jamsaz.PersonnlsApplication.BusinessObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FarsiLibrary.Utils">
+      <HintPath>..\..\Jamsaz.Application.Common\Jamsaz.Application.Common\bin\Debug\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Jamsaz.Common">
+      <HintPath>..\..\Jamsaz.Application.Common\Jamsaz.Application.Common\bin\Debug\Jamsaz.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ConnectionStringHelper.cs" />
+    <Compile Include="Data\Accident.cs" />
+    <Compile Include="Data\AnnouncementChange.cs" />
+    <Compile Include="Data\Applicant.cs" />
+    <Compile Include="Data\ApplicantCourse.cs" />
+    <Compile Include="Data\ApplicantsEducation.cs" />
+    <Compile Include="Data\ApplicantSkill.cs" />
+    <Compile Include="Data\ApprovalGroupDetail.cs" />
+    <Compile Include="Data\ApprovalGroupPersonnel.cs" />
+    <Compile Include="Data\Car.cs" />
+    <Compile Include="Data\Department.cs" />
+    <Compile Include="Data\DepartmentApprovalCategoryPersonnel.cs" />
+    <Compile Include="Data\DepartmentPersonnel.cs" />
+    <Compile Include="Data\DiagramDereeByGender.cs" />
+    <Compile Include="Data\DiagramMaritualStatus.cs" />
+    <Compile Include="Data\DigramPersonnelByGender.cs" />
+    <Compile Include="Data\EidRegistration.cs" />
+    <Compile Include="Data\EmployeeData.cs" />
+    <Compile Include="Data\Encouragement.cs" />
+    <Compile Include="Data\EvaluationStep.cs" />
+    <Compile Include="Data\ExcludePersonnel.cs" />
+    <Compile Include="Data\ExcpertAssesment.cs" />
+    <Compile Include="Data\GetLeavesResult.cs" />
+    <Compile Include="Data\IncreaseManagement.cs" />
+    <Compile Include="Data\IncreaseManagementDetail.cs" />
+    <Compile Include="Data\JamsazERPLiteDataClasses.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JamsazERPLiteDataClasses.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\LeaveRequest.cs" />
+    <Compile Include="Data\LeaveRequestsReportResult.cs" />
+    <Compile Include="Data\Major.cs" />
+    <Compile Include="Data\MartialStatusType.cs" />
+    <Compile Include="Data\Mission.cs" />
+    <Compile Include="Data\MissionApprovalGroupDetail.cs" />
+    <Compile Include="Data\MissionApprovalGroupPersonnel.cs" />
+    <Compile Include="Data\OrganisationStructurePersonnel.cs" />
+    <Compile Include="Data\OvertimeLicense.cs" />
+    <Compile Include="Data\OvertimeLicenseDetail.cs" />
+    <Compile Include="Data\PayRoll.cs" />
+    <Compile Include="Data\PerformanceByDepartmentResult.cs" />
+    <Compile Include="Data\PerformancEvaluationDetail.cs" />
+    <Compile Include="Data\PerformancEvaluationMaster.cs" />
+    <Compile Include="Data\Personel.cs" />
+    <Compile Include="Data\PersonelBankAccount.cs" />
+    <Compile Include="Data\PersonelOfExpertAsseement.cs" />
+    <Compile Include="Data\PersonnalsEducation.cs" />
+    <Compile Include="Data\Personnel.cs" />
+    <Compile Include="Data\PersonnelMissionReportResult.cs" />
+    <Compile Include="Data\PersonnelNotEvaluatedResult.cs" />
+    <Compile Include="Data\PersonnelsChildren.cs" />
+    <Compile Include="Data\Personnels_FullSearchAdvanced1Result.cs" />
+    <Compile Include="Data\Punishment.cs" />
+    <Compile Include="Data\PwKara.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PwKara.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ResultSearchAdvenced.cs" />
+    <Compile Include="Data\SelectChildDepartmentsPersonnelResult.cs" />
+    <Compile Include="Data\SelectPersonnelWithoutOvertimeResult.cs" />
+    <Compile Include="Data\Settlement.cs" />
+    <Compile Include="Data\Telephone.cs" />
+    <Compile Include="Data\TemplatePersonnelEducation.cs" />
+    <Compile Include="Data\User.cs" />
+    <Compile Include="Data\vwAccountNumberPersonnely_SearchAdvancedResult.cs" />
+    <Compile Include="Data\vwMainPersonnely.cs" />
+    <Compile Include="Data\vwMainPersonnely_SearchAdvancedResult.cs" />
+    <Compile Include="Data\WithoutOvertimePersonnel.cs" />
+    <Compile Include="Definitions\Definition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\enumBase.cs" />
+    <Compile Include="Resources\EnumNames.Designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Data\JamsazERPLiteDataClasses.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>JamsazERPLiteDataClasses.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\PwKara.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>PwKara.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Data\PwKara.dbml.layout">
+      <DependentUpon>PwKara.dbml</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ChartEmploymentStatusResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.EidRegistration.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.FilterApplicantResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetCountPersonelReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetExitPersonelResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetInputPersonelResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPaySanavatReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersounleCountResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetSanavatReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetUnitsHaveStaffResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PerformancEvaluationDetail.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PerformancEvaluationMaster.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Settlement.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\JamsazERPLiteDataClasses.dbml.layout">
+      <DependentUpon>JamsazERPLiteDataClasses.dbml</DependentUpon>
+    </None>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\EnumNames.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

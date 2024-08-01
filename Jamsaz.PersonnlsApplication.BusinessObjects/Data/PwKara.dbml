@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PwKara" Class="PwKaraDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=Blue;Initial Catalog=PwKara;User ID=sa" SettingsObjectName="Jamsaz.PersonnlsApplication.BusinessObjects.Properties.Settings" SettingsPropertyName="PwKaraConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.GetTaradodInWeek" Method="GetTaradodInWeek">
+    <Parameter Name="SDate" Parameter="sDate" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="PersonnelsNumbers" Parameter="personnelsNumbers" Type="System.String" DbType="NVarChar(2048)" />
+    <ElementType Name="GetTaradodInWeekResult">
+      <Column Name="Emp_no" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Saturday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Sunday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Monday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TuseDay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WendsDay" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Tuersday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Friday" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TOTAL" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.GetTotalDaysForTaradodInWeek" Method="GetTotalDaysForTaradodInWeek">
+    <Parameter Name="SDate" Parameter="sDate" Type="System.String" DbType="NVarChar(20)" />
+    <Parameter Name="PersonnelsNumbers" Parameter="personnelsNumbers" Type="System.String" DbType="NVarChar(2048)" />
+    <ElementType Name="GetTotalDaysForTaradodInWeekResult">
+      <Column Name="TotalDays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </ElementType>
+  </Function>
+</Database>

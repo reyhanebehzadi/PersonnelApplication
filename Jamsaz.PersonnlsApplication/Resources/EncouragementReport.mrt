@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="1">
+      <items Ref="2" type="Stimulsoft.Report.Dictionary.StiBusinessObject" isKey="true">
+        <Alias>items</Alias>
+        <BusinessObjects isList="true" count="0" />
+        <Category />
+        <Columns isList="true" count="7">
+          <value>PersonnelID,System.Nullable`1[System.Int32]</value>
+          <value>PersonnelNumber,System.String</value>
+          <value>FirstName,System.String</value>
+          <value>LastName,System.String</value>
+          <value>Applicant,System.String</value>
+          <value>Confirmor,System.String</value>
+          <value>date,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Guid>a8fac0a494b44f75a7561d1550be5f12</Guid>
+        <Name>items</Name>
+      </items>
+    </BusinessObjects>
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="0" />
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="4" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,0.4,19,1.4</ClientRectangle>
+          <Components isList="true" count="2">
+            <Image1 Ref="5" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0.4,0.2,1.4,1.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>0aa9721d0667489680d6a6d9cf825d62</Guid>
+              <Image>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</Image>
+              <Name>Image1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+            </Image1>
+            <Text3 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.8,0.6,5.6,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8,Bold</Font>
+              <Guid>f10b7af781ca41f6aaa266b80ef26ab3</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text> شرکت مهندسی صنعت و تولید جمع ساز</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=True, Trimming=None, WordWrap=False, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </PageHeaderBand1>
+        <GroupHeaderBand1 Ref="7" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,2.6,19,1</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text1 Ref="8" type="Text" isKey="true">
+              <Border>None;Black;1;None;False;4;[105:105:105]</Border>
+              <Brush>[219:229:241]</Brush>
+              <ClientRectangle>0,0,19,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="7" />
+              <Text>[{items.PersonnelNumber}] {items.FirstName} {items.LastName}      </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+          </Components>
+          <Condition>{items.PersonnelID}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupHeaderBand1>
+        <Items Ref="9" type="Stimulsoft.Report.Components.Table.StiTable" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid>a8fac0a494b44f75a7561d1550be5f12</BusinessObjectGuid>
+          <ClientRectangle>0,4.4,19,1.6</ClientRectangle>
+          <ColumnCount>3</ColumnCount>
+          <Components isList="true" count="6">
+            <Table1_Cell1 Ref="10" type="Stimulsoft.Report.Components.Table.StiTableCell" isKey="true">
+              <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0,0,6.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>0</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Table1_Cell1</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>تایید کننده</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Table1_Cell1>
+            <Table1_Cell2 Ref="11" type="Stimulsoft.Report.Components.Table.StiTableCell" isKey="true">
+              <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>6.4,0,6.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>1</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Table1_Cell2</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>درخواست کننده</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Table1_Cell2>
+            <Table1_Cell3 Ref="12" type="Stimulsoft.Report.Components.Table.StiTableCell" isKey="true">
+              <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>12.8,0,6.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>2</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Table1_Cell3</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>تاریخ</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Table1_Cell3>
+            <Table1_Cell4 Ref="13" type="Stimulsoft.Report.Components.Table.StiTableCell" isKey="true">
+              <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0.8,6.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>5</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Table1_Cell4</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{items.Confirmor}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Table1_Cell4>
+            <Table1_Cell5 Ref="14" type="Stimulsoft.Report.Components.Table.StiTableCell" isKey="true">
+              <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.4,0.8,6.4,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>6</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Table1_Cell5</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{items.Applicant}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Table1_Cell5>
+            <Table1_Cell6 Ref="15" type="Stimulsoft.Report.Components.Table.StiTableCell" isKey="true">
+              <Border>All;[105:105:105];1;Solid;False;4;[105:105:105]</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12.8,0.8,6.2,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,9</Font>
+              <HorAlignment>Center</HorAlignment>
+              <ID>7</ID>
+              <JoinCells isList="true" count="0" />
+              <Margins>0,0,0,0</Margins>
+              <Name>Table1_Cell6</Name>
+              <Page isRef="3" />
+              <Parent isRef="9" />
+              <Restrictions>AllowMove, AllowSelect, AllowChange</Restrictions>
+              <Text>{items.date}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Table1_Cell6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataSourceName isNull="true" />
+          <Filters isList="true" count="0" />
+          <HeaderRowsCount>1</HeaderRowsCount>
+          <MinHeight>0.4</MinHeight>
+          <Name>Items</Name>
+          <NumberID>25</NumberID>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <RightToLeft>True</RightToLeft>
+          <RowCount>2</RowCount>
+          <Sort isList="true" count="0" />
+        </Items>
+        <GroupFooterBand1 Ref="16" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,6.8,19,0.8</ClientRectangle>
+          <Components isList="true" count="1">
+            <Text2 Ref="17" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,-0.2,19,1</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Tahoma,8,Bold</Font>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="16" />
+              <Text> تعداد تشویقی:   {Count()}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+        </GroupFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>732019a815fa4bb4b2e7cf9e9e271eaa</Guid>
+      <Margins>1,1,1,1</Margins>
+      <Name>Page1</Name>
+      <PageHeight>29.7</PageHeight>
+      <PageWidth>21</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="18" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="19" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>6/20/2020 3:02:14 PM</ReportChanged>
+  <ReportCreated>6/20/2020 2:13:04 PM</ReportCreated>
+  <ReportFile>D:\EncouragementReport.mrt</ReportFile>
+  <ReportGuid>bbb4f2276d5a42c192aad8165a8af10a</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Centimeters</ReportUnit>
+  <ReportVersion>2013.1.1503</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

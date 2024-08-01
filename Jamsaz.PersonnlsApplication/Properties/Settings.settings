@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Jamsaz.PersonnlsApplication.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">atlas</Value>
+    </Setting>
+    <Setting Name="InitialCatalog" Type="System.String" Scope="User">
+      <Value Profile="(Default)">JamsazERPLite</Value>
+    </Setting>
+    <Setting Name="ProviderString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">temp</Value>
+    </Setting>
+    <Setting Name="PathTemplate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\atlas\Personnel Manager Software\Template\</Value>
+    </Setting>
+    <Setting Name="PathPersonnelsImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\atlas\Personnel Pictures\</Value>
+    </Setting>
+    <Setting Name="JamsazERPLiteConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=atlas;Initial Catalog=JamsazERPLite;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="PathConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\ATLAS\Personnel Manager Software\ConnectionString\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

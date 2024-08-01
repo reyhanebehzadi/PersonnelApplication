@@ -1,0 +1,2531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7CA501CB-3BCD-44DC-9EF4-5B403DD92897}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Jamsaz.PersonnlsApplication</RootNamespace>
+    <AssemblyName>Jamsaz.PersonnlsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>\\ATLAS\Personnel Manager Software\V10\</PublishUrl>
+    <Install>false</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>نرم افزار پرسنلی</ProductName>
+    <PublisherName>Jamsaz IT</PublisherName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>508</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>DBF9D2594D5032F396F1745464AB9C7A5FAFD7D2</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Jamsaz.PersonnlsApplication_16_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Personneli.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AMS.TextBox">
+      <HintPath>..\..\Dependencies\AMS.TextBox\AMS.TextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.2.Core, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="FarsiLibrary.Resources, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\FarsiLibrary\2.5\FarsiLibrary.Resources.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Utils, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\FarsiLibrary\2.5 New\FarsiLibrary.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win, Version=2.5.0.0, Culture=neutral, PublicKeyToken=def7c46cace23f8f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\FarsiLibrary\2.5 New\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Jamsaz.Application.Common">
+      <HintPath>..\..\Jamsaz.Application.Common\Jamsaz.Application.Common\bin\Debug\Jamsaz.Application.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Jamsaz.Common">
+      <HintPath>..\..\Jamsaz.Application.Common\Jamsaz.Application.Common\bin\Debug\Jamsaz.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Jamsaz.CustomTextBox">
+      <HintPath>..\..\Jamsaz.CustomTextBox\Jamsaz.CustomTextBox\bin\Debug\Jamsaz.CustomTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Data.v3">
+      <HintPath>..\..\Dependencies\Janus.WinForms.3.5\Janus.Data.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ButtonBar.v3">
+      <HintPath>..\..\..\..\..\DLL\Dll\Janus.Windows.ButtonBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.Common.v3">
+      <HintPath>..\..\Dependencies\Janus.WinForms.3.5\Janus.Windows.Common.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.ExplorerBar.v3">
+      <HintPath>..\..\Dependencies\Janus.WinForms.3.5\Janus.Windows.ExplorerBar.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.GridEX.v3">
+      <HintPath>..\..\Dependencies\Janus.WinForms.3.5\Janus.Windows.GridEX.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="Janus.Windows.UI.v3">
+      <HintPath>..\..\Dependencies\Janus.WinForms.3.5\Janus.Windows.UI.v3.dll</HintPath>
+    </Reference>
+    <Reference Include="MD.PersianDateTime, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MD.PersianDateTime.4.2.0\lib\MD.PersianDateTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Word\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\repo v14\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\repo v14\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\repo v14\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\repo v14\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\repo v14\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Jamsaz.Kiosk.NewFingerPrint\packages\Newtonsoft.Json.6.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor">
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check">
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper">
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2017.2.2.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Dependencies\StimulSoft\Used And Tested\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Suprema">
+      <HintPath>Z:\My Backups\1400-04-12-SourceProject\JamsazERP\Main\Source\PersonnlsApplication\Jamsaz.PersonnlsApplication\bin\Release\Suprema.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Net.Http">
+      <HintPath>..\..\Jamsaz.ProductionPlanning\Jamsaz.ProductionPlanning\bin\Debug\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\AnyItemsForlist.cs" />
+    <Compile Include="Classes\Currencytxt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\DepartmentEX.cs" />
+    <Compile Include="Classes\EnumBase.cs" />
+    <Compile Include="Classes\ExportToExcel.cs" />
+    <Compile Include="Classes\ExtensionMethod.cs" />
+    <Compile Include="Classes\FileManager.cs" />
+    <Compile Include="Classes\MakeTree.cs" />
+    <Compile Include="Classes\NullableTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classes\OrganizationStructureEX.cs" />
+    <Compile Include="Classes\SFRControl.cs" />
+    <Compile Include="Classes\ShabaCodeGenerator.cs" />
+    <Compile Include="Classes\WordManager.cs" />
+    <Compile Include="Definitions\definitions.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\EnumNames.Designer.cs" />
+    <Compile Include="UI\DialogForms\AddAccidentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddAccidentDialogForm.Designer.cs">
+      <DependentUpon>AddAccidentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddAnnouncementChangesDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddAnnouncementChangesDialogForm.Designer.cs">
+      <DependentUpon>AddAnnouncementChangesDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddApprovalGroupDetailDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddApprovalGroupDetailDialogForm.Designer.cs">
+      <DependentUpon>AddApprovalGroupDetailDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddApprovalGroupDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddApprovalGroupDialogForm.Designer.cs">
+      <DependentUpon>AddApprovalGroupDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationContractTypeDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationContractTypeDialogForm.Designer.cs">
+      <DependentUpon>AddBaseInformationContractTypeDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationMajorsDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationMajorsDialogForm.Designer.cs">
+      <DependentUpon>AddBaseInformationMajorsDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationMilitaryServiceDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationMilitaryServiceDialogForm.Designer.cs">
+      <DependentUpon>AddBaseInformationMilitaryServiceDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationUniversityServiceDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddBaseInformationUniversityServiceDialogForm.Designer.cs">
+      <DependentUpon>AddBaseInformationUniversityServiceDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddChangeTypeDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddChangeTypeDialogForm.Designer.cs">
+      <DependentUpon>AddChangeTypeDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddContactsDiaolgForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddContactsDiaolgForm.Designer.cs">
+      <DependentUpon>AddContactsDiaolgForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEditExpertAssesmentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEditExpertAssesmentDialogForm.Designer.cs">
+      <DependentUpon>AddEditExpertAssesmentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEidRegistrationDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEidRegistrationDialogForm.Designer.cs">
+      <DependentUpon>AddEidRegistrationDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEncouragementDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEncouragementDialogForm.Designer.cs">
+      <DependentUpon>AddEncouragementDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEvaluationIndexDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddEvaluationIndexDialogForm.Designer.cs">
+      <DependentUpon>AddEvaluationIndexDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddIncreaseManagementDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddIncreaseManagementDialogForm.Designer.cs">
+      <DependentUpon>AddIncreaseManagementDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddMissionAndLeaveDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddMissionAndLeaveDialogForm.Designer.cs">
+      <DependentUpon>AddMissionAndLeaveDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddMissionApprovalGroupDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddMissionApprovalGroupDialogForm.Designer.cs">
+      <DependentUpon>AddMissionApprovalGroupDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddOrEditPersonelBankAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddOrEditPersonelBankAccount.Designer.cs">
+      <DependentUpon>AddOrEditPersonelBankAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddOrganizationPostDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddOrganizationPostDialogForm.Designer.cs">
+      <DependentUpon>AddOrganizationPostDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddOriginalDepartmentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddOriginalDepartmentDialogForm.Designer.cs">
+      <DependentUpon>AddOriginalDepartmentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddPerformanceEvaluationDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddPerformanceEvaluationDialogForm.Designer.cs">
+      <DependentUpon>AddPerformanceEvaluationDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddPunishmentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddPunishmentDialogForm.Designer.cs">
+      <DependentUpon>AddPunishmentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddSettlementCategoryDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddSettlementCategoryDialogForm.Designer.cs">
+      <DependentUpon>AddSettlementCategoryDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AllPersonnelListDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AllPersonnelListDialogForm.Designer.cs">
+      <DependentUpon>AllPersonnelListDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\ApprovalGroupPersonnelDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\ApprovalGroupPersonnelDialogForm.Designer.cs">
+      <DependentUpon>ApprovalGroupPersonnelDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\ContractTypeDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\ContractTypeDialogForm.designer.cs">
+      <DependentUpon>ContractTypeDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\CopyPersonnelsPayRollDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\CopyPersonnelsPayRollDialogForm.Designer.cs">
+      <DependentUpon>CopyPersonnelsPayRollDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\CurrentContractDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\CurrentContractDialogForm.Designer.cs">
+      <DependentUpon>CurrentContractDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\CustomConnectionStringDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\CustomConnectionStringDialogForm.designer.cs">
+      <DependentUpon>CustomConnectionStringDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\DefineEvaluationStepDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\DefineEvaluationStepDialogForm.Designer.cs">
+      <DependentUpon>DefineEvaluationStepDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentEditDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentEditDialogForm.designer.cs">
+      <DependentUpon>DepartmentEditDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentsDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentsDialogForm.Designer.cs">
+      <DependentUpon>DepartmentsDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentVersionDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentVersionDialogForm.Designer.cs">
+      <DependentUpon>DepartmentVersionDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentVersionEditDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\DepartmentVersionEditDialogForm.Designer.cs">
+      <DependentUpon>DepartmentVersionEditDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditApplicantDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditApplicantDialogForm.Designer.cs">
+      <DependentUpon>EditApplicantDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditesPeronnelDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditesPeronnelDialogForm.designer.cs">
+      <DependentUpon>EditesPeronnelDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditOrganizationStructureVersionDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditOrganizationStructureVersionDialogForm.Designer.cs">
+      <DependentUpon>EditOrganizationStructureVersionDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditPersonnelsEducationDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditPersonnelsEducationDialogForm.designer.cs">
+      <DependentUpon>EditPersonnelsEducationDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditWebApplicantDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\EditWebApplicantDialogForm.Designer.cs">
+      <DependentUpon>EditWebApplicantDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\LeaveRequestDetailApprovalProcessDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\LeaveRequestDetailApprovalProcessDialogForm.Designer.cs">
+      <DependentUpon>LeaveRequestDetailApprovalProcessDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\MajorsDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\MajorsDialogForm.designer.cs">
+      <DependentUpon>MajorsDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\ManagementPathFoldersDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\ManagementPathFoldersDialogForm.designer.cs">
+      <DependentUpon>ManagementPathFoldersDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\MilitaryServiceStatusDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\MilitaryServiceStatusDialogForm.designer.cs">
+      <DependentUpon>MilitaryServiceStatusDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\NumberOfDaysDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\NumberOfDaysDialogForm.Designer.cs">
+      <DependentUpon>NumberOfDaysDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\OrganizationStructureVersionDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\OrganizationStructureVersionDialogForm.Designer.cs">
+      <DependentUpon>OrganizationStructureVersionDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\OriginalDepartmentListDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\OriginalDepartmentListDialogForm.Designer.cs">
+      <DependentUpon>OriginalDepartmentListDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddPersonelOfExpertAssesmentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\AddPersonelOfExpertAssesmentDialogForm.designer.cs">
+      <DependentUpon>AddPersonelOfExpertAssesmentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PaymentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PaymentDialogForm.Designer.cs">
+      <DependentUpon>PaymentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonelOfExpertAssesmentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonelOfExpertAssesmentDialogForm.Designer.cs">
+      <DependentUpon>PersonelOfExpertAssesmentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelListDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelListDialogForm.Designer.cs">
+      <DependentUpon>PersonnelListDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\SelectPersonnelForZhetonDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\SelectPersonnelForZhetonDialogForm.Designer.cs">
+      <DependentUpon>SelectPersonnelForZhetonDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\AccidentsDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\AccidentsDockForm.Designer.cs">
+      <DependentUpon>AccidentsDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\AnnouncementChangesDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\AnnouncementChangesDockForm.Designer.cs">
+      <DependentUpon>AnnouncementChangesDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ApprovalGroupDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ApprovalGroupDockForm.Designer.cs">
+      <DependentUpon>ApprovalGroupDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ChangeTypeDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ChangeTypeDockForm.Designer.cs">
+      <DependentUpon>ChangeTypeDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\EidRegistrationDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\EidRegistrationDockForm.Designer.cs">
+      <DependentUpon>EidRegistrationDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\EvaluationStepDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\EvaluationStepDockForm.Designer.cs">
+      <DependentUpon>EvaluationStepDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\GetPersonelByStructuerDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\GetPersonelByStructuerDockForm.Designer.cs">
+      <DependentUpon>GetPersonelByStructuerDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\GetPersonelSubEmployeeDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\GetPersonelSubEmployeeDockForm.Designer.cs">
+      <DependentUpon>GetPersonelSubEmployeeDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\MissionAndLeaveDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\MissionAndLeaveDockForm.Designer.cs">
+      <DependentUpon>MissionAndLeaveDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\MissionApprovalGroupDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\MissionApprovalGroupDockForm.Designer.cs">
+      <DependentUpon>MissionApprovalGroupDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\OrganizationPostDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\OrganizationPostDockForm.Designer.cs">
+      <DependentUpon>OrganizationPostDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PerformancersDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PerformancersDockForm.Designer.cs">
+      <DependentUpon>PerformancersDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelEvaluationNotRegisteredDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelEvaluationNotRegisteredDockForm.Designer.cs">
+      <DependentUpon>PersonnelEvaluationNotRegisteredDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\SettlementDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\SettlementDockForm.Designer.cs">
+      <DependentUpon>SettlementDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\SettlementReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\SettlementReportForm.Designer.cs">
+      <DependentUpon>SettlementReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\TopPersonelEvaluationDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\TopPersonelEvaluationDockForm.Designer.cs">
+      <DependentUpon>TopPersonelEvaluationDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\UpdateContractDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\UpdateContractDockForm.Designer.cs">
+      <DependentUpon>UpdateContractDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\AccidentsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\AccidentsReportForm.Designer.cs">
+      <DependentUpon>AccidentsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\ComprehensivePersonnelReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\ComprehensivePersonnelReportForm.Designer.cs">
+      <DependentUpon>ComprehensivePersonnelReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\EidRegistrationReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\EidRegistrationReport.Designer.cs">
+      <DependentUpon>EidRegistrationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\EndDateOfPersonnelContractReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\EndDateOfPersonnelContractReportForm.Designer.cs">
+      <DependentUpon>EndDateOfPersonnelContractReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\FirstOvertimeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\FirstOvertimeReportForm.Designer.cs">
+      <DependentUpon>FirstOvertimeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetCountReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetCountReportForm.Designer.cs">
+      <DependentUpon>GetCountReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetOrganizationPostReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetOrganizationPostReport.Designer.cs">
+      <DependentUpon>GetOrganizationPostReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetOvertimeLicenseReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetOvertimeLicenseReportForm.Designer.cs">
+      <DependentUpon>GetOvertimeLicenseReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPaySanavatReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPaySanavatReportForm.Designer.cs">
+      <DependentUpon>GetPaySanavatReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPercentReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPercentReport.Designer.cs">
+      <DependentUpon>GetPercentReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPercentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPercentReportForm.Designer.cs">
+      <DependentUpon>GetPercentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPersonnelRecordsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPersonnelRecordsReportForm.Designer.cs">
+      <DependentUpon>GetPersonnelRecordsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPersonnelStatusReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\GetPersonnelStatusReportForm.Designer.cs">
+      <DependentUpon>GetPersonnelStatusReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheAyabZahabReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheAyabZahabReportForm.Designer.cs">
+      <DependentUpon>HagheAyabZahabReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheGhazaReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheGhazaReportForm.Designer.cs">
+      <DependentUpon>HagheGhazaReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheJazbReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheJazbReportForm.Designer.cs">
+      <DependentUpon>HagheJazbReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheOladReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheOladReportForm.Designer.cs">
+      <DependentUpon>HagheOladReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheSarparstiReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\HagheSarparstiReportForm.Designer.cs">
+      <DependentUpon>HagheSarparstiReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\karkardReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\karkardReportForm.Designer.cs">
+      <DependentUpon>karkardReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\KarkardServicesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\KarkardServicesReportForm.Designer.cs">
+      <DependentUpon>KarkardServicesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\LeaveReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\LeaveReportForm.Designer.cs">
+      <DependentUpon>LeaveReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\MissionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\MissionReportForm.Designer.cs">
+      <DependentUpon>MissionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\MissionReportPrintForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\MissionReportPrintForm.Designer.cs">
+      <DependentUpon>MissionReportPrintForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\OvertimeLicenseReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\OvertimeLicenseReportForm.Designer.cs">
+      <DependentUpon>OvertimeLicenseReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\OvertimeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\OvertimeReportForm.Designer.cs">
+      <DependentUpon>OvertimeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceAllDepartmentListReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceAllDepartmentListReportForm.Designer.cs">
+      <DependentUpon>PerformanceAllDepartmentListReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceByDepartmentChartReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceByDepartmentChartReportForm.Designer.cs">
+      <DependentUpon>PerformanceByDepartmentChartReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceAllDepartmentScatterReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceAllDepartmentScatterReportForm.Designer.cs">
+      <DependentUpon>PerformanceAllDepartmentScatterReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonelBankAccountDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonelBankAccountDialogForm.Designer.cs">
+      <DependentUpon>PersonelBankAccountDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelByBirthDayDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelByBirthDayDialogForm.Designer.cs">
+      <DependentUpon>PersonnelByBirthDayDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelEducationDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelEducationDialogForm.designer.cs">
+      <DependentUpon>PersonnelEducationDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelFingerPrintsDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelFingerPrintsDialogForm.designer.cs">
+      <DependentUpon>PersonnelFingerPrintsDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelListForm.designer.cs">
+      <DependentUpon>PersonnelListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelPayRollDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\PersonnelPayRollDialogForm.Designer.cs">
+      <DependentUpon>PersonnelPayRollDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\ProgressIconDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\ProgressIconDialogForm.designer.cs">
+      <DependentUpon>ProgressIconDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\RolesStructureDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\RolesStructureDialogForm.Designer.cs">
+      <DependentUpon>RolesStructureDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\RolesStructureEditDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\RolesStructureEditDialogForm.Designer.cs">
+      <DependentUpon>RolesStructureEditDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\selectedPersonnelNumberWithRangeDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\selectedPersonnelNumberWithRangeDialogForm.Designer.cs">
+      <DependentUpon>selectedPersonnelNumberWithRangeDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\SelectMonthDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\SelectMonthDialogForm.Designer.cs">
+      <DependentUpon>SelectMonthDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\SelectPersonnelListDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\SelectPersonnelListDialogForm.Designer.cs">
+      <DependentUpon>SelectPersonnelListDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\SetOriginalDepartmentDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\SetOriginalDepartmentDialogForm.Designer.cs">
+      <DependentUpon>SetOriginalDepartmentDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\SetShabaForPersonnelDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\SetShabaForPersonnelDialogForm.Designer.cs">
+      <DependentUpon>SetShabaForPersonnelDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\SettlementDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\SettlementDialogForm.Designer.cs">
+      <DependentUpon>SettlementDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DialogForms\UniversityDegreesDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DialogForms\UniversityDegreesDialogForm.designer.cs">
+      <DependentUpon>UniversityDegreesDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ApplicantsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ApplicantsForm.Designer.cs">
+      <DependentUpon>ApplicantsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\AssignPersonnelsToDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\AssignPersonnelsToDepartmentForm.Designer.cs">
+      <DependentUpon>AssignPersonnelsToDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\AssignPersonnelsToOrganizationStructureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\AssignPersonnelsToOrganizationStructureForm.Designer.cs">
+      <DependentUpon>AssignPersonnelsToOrganizationStructureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationContractTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationContractTypeForm.Designer.cs">
+      <DependentUpon>BaseInformationContractTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationDepartmentVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationDepartmentVersionForm.designer.cs">
+      <DependentUpon>BaseInformationDepartmentVersionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationMajorsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationMajorsForm.Designer.cs">
+      <DependentUpon>BaseInformationMajorsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationMilitaryServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationMilitaryServiceForm.Designer.cs">
+      <DependentUpon>BaseInformationMilitaryServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationOrganizationStructureVersionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationOrganizationStructureVersionForm.Designer.cs">
+      <DependentUpon>BaseInformationOrganizationStructureVersionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationUniversityServiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\BaseInformationUniversityServiceForm.Designer.cs">
+      <DependentUpon>BaseInformationUniversityServiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ContactDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ContactDockForm.Designer.cs">
+      <DependentUpon>ContactDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\DepartmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\DepartmentsForm.Designer.cs">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\DepartmentVersionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\DepartmentVersionReportForm.Designer.cs">
+      <DependentUpon>DepartmentVersionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\DiagramDegreeByGenderReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\DiagramDegreeByGenderReportForm.Designer.cs">
+      <DependentUpon>DiagramDegreeByGenderReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\DiagramMaritualStatusReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\DiagramMaritualStatusReportForm.Designer.cs">
+      <DependentUpon>DiagramMaritualStatusReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\DiagramPersonnelByGenderReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\DiagramPersonnelByGenderReportForm.Designer.cs">
+      <DependentUpon>DiagramPersonnelByGenderReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\EncouragementDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\EncouragementDockForm.Designer.cs">
+      <DependentUpon>EncouragementDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\EvaluationIndexDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\EvaluationIndexDockForm.Designer.cs">
+      <DependentUpon>EvaluationIndexDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ExcludePersonnelListDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ExcludePersonnelListDockForm.Designer.cs">
+      <DependentUpon>ExcludePersonnelListDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\IncreaseManagementDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\IncreaseManagementDockForm.Designer.cs">
+      <DependentUpon>IncreaseManagementDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\IncreasePayRollDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\IncreasePayRollDockForm.Designer.cs">
+      <DependentUpon>IncreasePayRollDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ListMaritualPersonnelsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ListMaritualPersonnelsReportForm.Designer.cs">
+      <DependentUpon>ListMaritualPersonnelsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\ListPersonnelByEducationReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\ListPersonnelByEducationReportForm.Designer.cs">
+      <DependentUpon>ListPersonnelByEducationReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PerformancePersonnelReportByDepartmentDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PerformancePersonnelReportByDepartmentDockForm.Designer.cs">
+      <DependentUpon>PerformancePersonnelReportByDepartmentDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PerformancEvaluationDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PerformancEvaluationDockForm.Designer.cs">
+      <DependentUpon>PerformancEvaluationDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonelShabaDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonelShabaDockForm.Designer.cs">
+      <DependentUpon>PersonelShabaDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelSearcherDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelSearcherDockForm.designer.cs">
+      <DependentUpon>PersonnelSearcherDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\OriginalDepartmentsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\OriginalDepartmentsForm.Designer.cs">
+      <DependentUpon>OriginalDepartmentsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelBankAccountReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelBankAccountReportForm.Designer.cs">
+      <DependentUpon>PersonnelBankAccountReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\personnelProfilesReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\personnelProfilesReportForm.Designer.cs">
+      <DependentUpon>personnelProfilesReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelSearchForm.Designer.cs">
+      <DependentUpon>PersonnelSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelsListForAssignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PersonnelsListForAssignForm.Designer.cs">
+      <DependentUpon>PersonnelsListForAssignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PrsonnelReportByInSuranceNoReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PrsonnelReportByInSuranceNoReportForm.Designer.cs">
+      <DependentUpon>PrsonnelReportByInSuranceNoReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\PunishmentDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\PunishmentDockForm.Designer.cs">
+      <DependentUpon>PunishmentDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\RolesStructureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\RolesStructureForm.Designer.cs">
+      <DependentUpon>RolesStructureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\SelectApplicantByRespectDateReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\SelectApplicantByRespectDateReportForm.Designer.cs">
+      <DependentUpon>SelectApplicantByRespectDateReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\SelectPersonnelsByMajorReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\SelectPersonnelsByMajorReportForm.Designer.cs">
+      <DependentUpon>SelectPersonnelsByMajorReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\SettlementCategoryDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\SettlementCategoryDockForm.Designer.cs">
+      <DependentUpon>SettlementCategoryDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\TechnicalStaffReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\TechnicalStaffReportForm.Designer.cs">
+      <DependentUpon>TechnicalStaffReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\WebApplicantsDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\WebApplicantsDockForm.Designer.cs">
+      <DependentUpon>WebApplicantsDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DockForms\WithoutOvertimePersonnelsDockForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DockForms\WithoutOvertimePersonnelsDockForm.Designer.cs">
+      <DependentUpon>WithoutOvertimePersonnelsDockForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\AnnualReportStaffForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\AnnualReportStaffForm.Designer.cs">
+      <DependentUpon>AnnualReportStaffForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\ChartEmploymentStatusReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\ChartEmploymentStatusReport.Designer.cs">
+      <DependentUpon>ChartEmploymentStatusReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\IncreaseManagementReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\IncreaseManagementReportForm.Designer.cs">
+      <DependentUpon>IncreaseManagementReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceAllDepartmentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceAllDepartmentReportForm.Designer.cs">
+      <DependentUpon>PerformanceAllDepartmentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceByDepartmentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceByDepartmentReportForm.Designer.cs">
+      <DependentUpon>PerformanceByDepartmentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformancePercentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformancePercentReportForm.Designer.cs">
+      <DependentUpon>PerformancePercentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PerformanceReportForm.Designer.cs">
+      <DependentUpon>PerformanceReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonelShebaReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonelShebaReportForm.Designer.cs">
+      <DependentUpon>PersonelShebaReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelChildsReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelChildsReportForm.Designer.cs">
+      <DependentUpon>PersonnelChildsReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelEmailListReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelEmailListReportForm.Designer.cs">
+      <DependentUpon>PersonnelEmailListReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelLeaveReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelLeaveReportForm.Designer.cs">
+      <DependentUpon>PersonnelLeaveReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelOfEachDepartmentReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelOfEachDepartmentReportForm.Designer.cs">
+      <DependentUpon>PersonnelOfEachDepartmentReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelReportForm.Designer.cs">
+      <DependentUpon>PersonnelReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsFunctionReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsFunctionReportForm.Designer.cs">
+      <DependentUpon>PersonnelsFunctionReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsList1ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsList1ReportForm.Designer.cs">
+      <DependentUpon>PersonnelsList1ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsListReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsListReportForm.Designer.cs">
+      <DependentUpon>PersonnelsListReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsPayRollReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\PersonnelsPayRollReportForm.Designer.cs">
+      <DependentUpon>PersonnelsPayRollReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\ReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\ReportForm.Designer.cs">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\SakhtieKarReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\SakhtieKarReportForm.Designer.cs">
+      <DependentUpon>SakhtieKarReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\SecoundOverTimeReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\SecoundOverTimeReportForm.Designer.cs">
+      <DependentUpon>SecoundOverTimeReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\SettlementReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\SettlementReport.Designer.cs">
+      <DependentUpon>SettlementReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\StaffPayrollReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\StaffPayrollReportForm.Designer.cs">
+      <DependentUpon>StaffPayrollReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\WebApplicantReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\WebApplicantReportForm.Designer.cs">
+      <DependentUpon>WebApplicantReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ReportForms\WithoutOvertimePersonnelReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ReportForms\WithoutOvertimePersonnelReportForm.Designer.cs">
+      <DependentUpon>WithoutOvertimePersonnelReportForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\AccidentsReport.rdlc" />
+    <EmbeddedResource Include="Reports\AnnualReportStaff.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ChartEmploymentStatusReport.rdlc" />
+    <EmbeddedResource Include="Reports\CountPersonnelReport.rdlc" />
+    <EmbeddedResource Include="Reports\DepartmentVersionReport.rdlc" />
+    <EmbeddedResource Include="Reports\DiagramDegreeReport.rdlc" />
+    <EmbeddedResource Include="Reports\DigramMaritualStatusReport.rdlc" />
+    <EmbeddedResource Include="Reports\DigramPersonnelByGenderReport.rdlc" />
+    <EmbeddedResource Include="Reports\EidRegistrationReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\EndDateOfPersonnelContractReprot.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GetOrganizationPostReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GetOvertimeLicenseReport.rdlc" />
+    <EmbeddedResource Include="Reports\GetPaySanavatRepor.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\GetPercentReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HagheAyabZahabReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HagheGhazaReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HagheJazbReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\HagheSarparstiReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\IncreaseManagementReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\karkardReport.rdlc" />
+    <EmbeddedResource Include="Reports\LeaveReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ListMaritualPersonnelsReport.rdlc" />
+    <EmbeddedResource Include="Reports\ListPersonnelbyEducationReport.rdlc" />
+    <EmbeddedResource Include="Reports\MissionReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\OvertimeReport.rdlc" />
+    <EmbeddedResource Include="Reports\PerformanceAllDepartmentReport.rdlc" />
+    <EmbeddedResource Include="Reports\PerformanceAllDepartmentListReport.rdlc" />
+    <EmbeddedResource Include="Reports\PerformancePrecentByDepartmentReport.rdlc" />
+    <EmbeddedResource Include="Reports\PerformanceByDepartmentWithChartReport.rdlc" />
+    <EmbeddedResource Include="Reports\PerformanceByDepartmentReport.rdlc" />
+    <EmbeddedResource Include="Reports\PerformanceReport.rdlc" />
+    <EmbeddedResource Include="Reports\PersonelShebaAccountReport.rdlc" />
+    <EmbeddedResource Include="Reports\PersonnelBankAccount.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelChildsReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelEmailListReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelOfEachDepartmentReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelProfilesReport.rdlc" />
+    <EmbeddedResource Include="Reports\PersonnelReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelReportByInSuranceNo.rdlc" />
+    <EmbeddedResource Include="Reports\PersonnelsList.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\PersonnelsList1.rdlc" />
+    <EmbeddedResource Include="Reports\PersonnelsPayRollReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\Report.rdlc" />
+    <EmbeddedResource Include="Reports\SakhtieKarReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SelectApplicantByRespectDateReport.rdlc" />
+    <EmbeddedResource Include="Reports\SelectPersonnelsByMajorReport.rdlc" />
+    <EmbeddedResource Include="Reports\SettlementReport.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TaradodInWeekReport.rdlc" />
+    <EmbeddedResource Include="Reports\TechnicalStaffReport.rdlc" />
+    <EmbeddedResource Include="Reports\WebApplicantReport.rdlc" />
+    <EmbeddedResource Include="Reports\WithoutOvertimePersonnelReport.rdlc" />
+    <EmbeddedResource Include="Resources\EnumNames.resx" />
+    <EmbeddedResource Include="UI\DialogForms\AddAccidentDialogForm.resx">
+      <DependentUpon>AddAccidentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddAnnouncementChangesDialogForm.resx">
+      <DependentUpon>AddAnnouncementChangesDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddApprovalGroupDetailDialogForm.resx">
+      <DependentUpon>AddApprovalGroupDetailDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddApprovalGroupDialogForm.resx">
+      <DependentUpon>AddApprovalGroupDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddBaseInformationContractTypeDialogForm.resx">
+      <DependentUpon>AddBaseInformationContractTypeDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddBaseInformationMajorsDialogForm.resx">
+      <DependentUpon>AddBaseInformationMajorsDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddBaseInformationMilitaryServiceDialogForm.resx">
+      <DependentUpon>AddBaseInformationMilitaryServiceDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddBaseInformationUniversityServiceDialogForm.resx">
+      <DependentUpon>AddBaseInformationUniversityServiceDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddChangeTypeDialogForm.resx">
+      <DependentUpon>AddChangeTypeDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddContactsDiaolgForm.resx">
+      <DependentUpon>AddContactsDiaolgForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddEditExpertAssesmentDialogForm.resx">
+      <DependentUpon>AddEditExpertAssesmentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddEidRegistrationDialogForm.resx">
+      <DependentUpon>AddEidRegistrationDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddEncouragementDialogForm.resx">
+      <DependentUpon>AddEncouragementDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddEvaluationIndexDialogForm.resx">
+      <DependentUpon>AddEvaluationIndexDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddIncreaseManagementDialogForm.resx">
+      <DependentUpon>AddIncreaseManagementDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddMissionAndLeaveDialogForm.resx">
+      <DependentUpon>AddMissionAndLeaveDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddMissionApprovalGroupDialogForm.resx">
+      <DependentUpon>AddMissionApprovalGroupDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddOrEditPersonelBankAccount.resx">
+      <DependentUpon>AddOrEditPersonelBankAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddOrganizationPostDialogForm.resx">
+      <DependentUpon>AddOrganizationPostDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddOriginalDepartmentDialogForm.resx">
+      <DependentUpon>AddOriginalDepartmentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddPerformanceEvaluationDialogForm.resx">
+      <DependentUpon>AddPerformanceEvaluationDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddPunishmentDialogForm.resx">
+      <DependentUpon>AddPunishmentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddSettlementCategoryDialogForm.resx">
+      <DependentUpon>AddSettlementCategoryDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AllPersonnelListDialogForm.resx">
+      <DependentUpon>AllPersonnelListDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\ApprovalGroupPersonnelDialogForm.resx">
+      <DependentUpon>ApprovalGroupPersonnelDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\ContractTypeDialogForm.resx">
+      <DependentUpon>ContractTypeDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\CopyPersonnelsPayRollDialogForm.resx">
+      <DependentUpon>CopyPersonnelsPayRollDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\CurrentContractDialogForm.resx">
+      <DependentUpon>CurrentContractDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\CustomConnectionStringDialogForm.resx">
+      <DependentUpon>CustomConnectionStringDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\DefineEvaluationStepDialogForm.resx">
+      <DependentUpon>DefineEvaluationStepDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\DepartmentEditDialogForm.resx">
+      <DependentUpon>DepartmentEditDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\DepartmentsDialogForm.resx">
+      <DependentUpon>DepartmentsDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\DepartmentVersionDialogForm.resx">
+      <DependentUpon>DepartmentVersionDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\DepartmentVersionEditDialogForm.resx">
+      <DependentUpon>DepartmentVersionEditDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\EditApplicantDialogForm.resx">
+      <DependentUpon>EditApplicantDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\EditesPeronnelDialogForm.resx">
+      <DependentUpon>EditesPeronnelDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\EditOrganizationStructureVersionDialogForm.resx">
+      <DependentUpon>EditOrganizationStructureVersionDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\EditPersonnelsEducationDialogForm.resx">
+      <DependentUpon>EditPersonnelsEducationDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\EditWebApplicantDialogForm.resx">
+      <DependentUpon>EditWebApplicantDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\LeaveRequestDetailApprovalProcessDialogForm.resx">
+      <DependentUpon>LeaveRequestDetailApprovalProcessDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\MajorsDialogForm.resx">
+      <DependentUpon>MajorsDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\ManagementPathFoldersDialogForm.resx">
+      <DependentUpon>ManagementPathFoldersDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\MilitaryServiceStatusDialogForm.resx">
+      <DependentUpon>MilitaryServiceStatusDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\NumberOfDaysDialogForm.resx">
+      <DependentUpon>NumberOfDaysDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\OrganizationStructureVersionDialogForm.resx">
+      <DependentUpon>OrganizationStructureVersionDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\OriginalDepartmentListDialogForm.resx">
+      <DependentUpon>OriginalDepartmentListDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\AddPersonelOfExpertAssesmentDialogForm.resx">
+      <DependentUpon>AddPersonelOfExpertAssesmentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PaymentDialogForm.resx">
+      <DependentUpon>PaymentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonelOfExpertAssesmentDialogForm.resx">
+      <DependentUpon>PersonelOfExpertAssesmentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonnelListDialogForm.resx">
+      <DependentUpon>PersonnelListDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\SelectPersonnelForZhetonDialogForm.resx">
+      <DependentUpon>SelectPersonnelForZhetonDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\AccidentsDockForm.resx">
+      <DependentUpon>AccidentsDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\AnnouncementChangesDockForm.resx">
+      <DependentUpon>AnnouncementChangesDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ApprovalGroupDockForm.resx">
+      <DependentUpon>ApprovalGroupDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ChangeTypeDockForm.resx">
+      <DependentUpon>ChangeTypeDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\EidRegistrationDockForm.resx">
+      <DependentUpon>EidRegistrationDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\EvaluationStepDockForm.resx">
+      <DependentUpon>EvaluationStepDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\GetPersonelByStructuerDockForm.resx">
+      <DependentUpon>GetPersonelByStructuerDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\GetPersonelSubEmployeeDockForm.resx">
+      <DependentUpon>GetPersonelSubEmployeeDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\MissionAndLeaveDockForm.resx">
+      <DependentUpon>MissionAndLeaveDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\MissionApprovalGroupDockForm.resx">
+      <DependentUpon>MissionApprovalGroupDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\OrganizationPostDockForm.resx">
+      <DependentUpon>OrganizationPostDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PerformancersDockForm.resx">
+      <DependentUpon>PerformancersDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PersonnelEvaluationNotRegisteredDockForm.resx">
+      <DependentUpon>PersonnelEvaluationNotRegisteredDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\SettlementDockForm.resx">
+      <DependentUpon>SettlementDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\SettlementReportForm.resx">
+      <DependentUpon>SettlementReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\TopPersonelEvaluationDockForm.resx">
+      <DependentUpon>TopPersonelEvaluationDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\UpdateContractDockForm.resx">
+      <DependentUpon>UpdateContractDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\AccidentsReportForm.resx">
+      <DependentUpon>AccidentsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\ComprehensivePersonnelReportForm.resx">
+      <DependentUpon>ComprehensivePersonnelReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\EidRegistrationReport.resx">
+      <DependentUpon>EidRegistrationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\EndDateOfPersonnelContractReportForm.resx">
+      <DependentUpon>EndDateOfPersonnelContractReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\FirstOvertimeReportForm.resx">
+      <DependentUpon>FirstOvertimeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetCountReportForm.resx">
+      <DependentUpon>GetCountReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetOrganizationPostReport.resx">
+      <DependentUpon>GetOrganizationPostReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetOvertimeLicenseReportForm.resx">
+      <DependentUpon>GetOvertimeLicenseReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetPaySanavatReportForm.resx">
+      <DependentUpon>GetPaySanavatReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetPercentReport.resx">
+      <DependentUpon>GetPercentReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetPercentReportForm.resx">
+      <DependentUpon>GetPercentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetPersonnelRecordsReportForm.resx">
+      <DependentUpon>GetPersonnelRecordsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\GetPersonnelStatusReportForm.resx">
+      <DependentUpon>GetPersonnelStatusReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\HagheAyabZahabReportForm.resx">
+      <DependentUpon>HagheAyabZahabReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\HagheGhazaReportForm.resx">
+      <DependentUpon>HagheGhazaReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\HagheJazbReportForm.resx">
+      <DependentUpon>HagheJazbReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\HagheOladReportForm.resx">
+      <DependentUpon>HagheOladReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\HagheSarparstiReportForm.resx">
+      <DependentUpon>HagheSarparstiReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\karkardReportForm.resx">
+      <DependentUpon>karkardReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\KarkardServicesReportForm.resx">
+      <DependentUpon>KarkardServicesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\LeaveReportForm.resx">
+      <DependentUpon>LeaveReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\MissionReportForm.resx">
+      <DependentUpon>MissionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\MissionReportPrintForm.resx">
+      <DependentUpon>MissionReportPrintForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\OvertimeLicenseReportForm.resx">
+      <DependentUpon>OvertimeLicenseReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\OvertimeReportForm.resx">
+      <DependentUpon>OvertimeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformanceAllDepartmentListReportForm.resx">
+      <DependentUpon>PerformanceAllDepartmentListReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformanceByDepartmentChartReportForm.resx">
+      <DependentUpon>PerformanceByDepartmentChartReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformanceAllDepartmentScatterReportForm.resx">
+      <DependentUpon>PerformanceAllDepartmentScatterReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonelBankAccountDialogForm.resx">
+      <DependentUpon>PersonelBankAccountDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonnelByBirthDayDialogForm.resx">
+      <DependentUpon>PersonnelByBirthDayDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonnelEducationDialogForm.resx">
+      <DependentUpon>PersonnelEducationDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonnelFingerPrintsDialogForm.resx">
+      <DependentUpon>PersonnelFingerPrintsDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonnelListForm.resx">
+      <DependentUpon>PersonnelListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\PersonnelPayRollDialogForm.resx">
+      <DependentUpon>PersonnelPayRollDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\ProgressIconDialogForm.resx">
+      <DependentUpon>ProgressIconDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\RolesStructureDialogForm.resx">
+      <DependentUpon>RolesStructureDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\RolesStructureEditDialogForm.resx">
+      <DependentUpon>RolesStructureEditDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\selectedPersonnelNumberWithRangeDialogForm.resx">
+      <DependentUpon>selectedPersonnelNumberWithRangeDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\SelectMonthDialogForm.resx">
+      <DependentUpon>SelectMonthDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\SelectPersonnelListDialogForm.resx">
+      <DependentUpon>SelectPersonnelListDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\SetOriginalDepartmentDialogForm.resx">
+      <DependentUpon>SetOriginalDepartmentDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\SetShabaForPersonnelDialogForm.resx">
+      <DependentUpon>SetShabaForPersonnelDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\SettlementDialogForm.resx">
+      <DependentUpon>SettlementDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DialogForms\UniversityDegreesDialogForm.resx">
+      <DependentUpon>UniversityDegreesDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ApplicantsForm.resx">
+      <DependentUpon>ApplicantsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\AssignPersonnelsToDepartmentForm.resx">
+      <DependentUpon>AssignPersonnelsToDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\AssignPersonnelsToOrganizationStructureForm.resx">
+      <DependentUpon>AssignPersonnelsToOrganizationStructureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\BaseInformationContractTypeForm.resx">
+      <DependentUpon>BaseInformationContractTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\BaseInformationDepartmentVersionForm.resx">
+      <DependentUpon>BaseInformationDepartmentVersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\BaseInformationMajorsForm.resx">
+      <DependentUpon>BaseInformationMajorsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\BaseInformationMilitaryServiceForm.resx">
+      <DependentUpon>BaseInformationMilitaryServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\BaseInformationOrganizationStructureVersionForm.resx">
+      <DependentUpon>BaseInformationOrganizationStructureVersionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\BaseInformationUniversityServiceForm.resx">
+      <DependentUpon>BaseInformationUniversityServiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ContactDockForm.resx">
+      <DependentUpon>ContactDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\DepartmentsForm.resx">
+      <DependentUpon>DepartmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\DepartmentVersionReportForm.resx">
+      <DependentUpon>DepartmentVersionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\DiagramDegreeByGenderReportForm.resx">
+      <DependentUpon>DiagramDegreeByGenderReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\DiagramMaritualStatusReportForm.resx">
+      <DependentUpon>DiagramMaritualStatusReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\DiagramPersonnelByGenderReportForm.resx">
+      <DependentUpon>DiagramPersonnelByGenderReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\EncouragementDockform.resx">
+      <DependentUpon>EncouragementDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\EvaluationIndexDockForm.resx">
+      <DependentUpon>EvaluationIndexDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ExcludePersonnelListDockForm.resx">
+      <DependentUpon>ExcludePersonnelListDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\IncreaseManagementDockForm.resx">
+      <DependentUpon>IncreaseManagementDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\IncreasePayRollDockForm.resx">
+      <DependentUpon>IncreasePayRollDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ListMaritualPersonnelsReportForm.resx">
+      <DependentUpon>ListMaritualPersonnelsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\ListPersonnelByEducationReportForm.resx">
+      <DependentUpon>ListPersonnelByEducationReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PerformancePersonnelReportByDepartmentDockForm.resx">
+      <DependentUpon>PerformancePersonnelReportByDepartmentDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PerformancEvaluationDockForm.resx">
+      <DependentUpon>PerformancEvaluationDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PersonelShabaDockForm.resx">
+      <DependentUpon>PersonelShabaDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PersonnelSearcherDockForm.resx">
+      <DependentUpon>PersonnelSearcherDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\OriginalDepartmentsForm.resx">
+      <DependentUpon>OriginalDepartmentsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PersonnelBankAccountReportForm.resx">
+      <DependentUpon>PersonnelBankAccountReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\personnelProfilesReportForm.resx">
+      <DependentUpon>personnelProfilesReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PersonnelSearchForm.resx">
+      <DependentUpon>PersonnelSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PersonnelsListForAssignForm.resx">
+      <DependentUpon>PersonnelsListForAssignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PrsonnelReportByInSuranceNoReportForm.resx">
+      <DependentUpon>PrsonnelReportByInSuranceNoReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\PunishmentDockForm.resx">
+      <DependentUpon>PunishmentDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\RolesStructureForm.resx">
+      <DependentUpon>RolesStructureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\SelectApplicantByRespectDateReportForm.resx">
+      <DependentUpon>SelectApplicantByRespectDateReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\SelectPersonnelsByMajorReportForm.resx">
+      <DependentUpon>SelectPersonnelsByMajorReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\SettlementCategoryDockForm.resx">
+      <DependentUpon>SettlementCategoryDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\TechnicalStaffReportForm.resx">
+      <DependentUpon>TechnicalStaffReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\WebApplicantsDockForm.resx">
+      <DependentUpon>WebApplicantsDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DockForms\WithoutOvertimePersonnelsDockForm.resx">
+      <DependentUpon>WithoutOvertimePersonnelsDockForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\AnnualReportStaffForm.resx">
+      <DependentUpon>AnnualReportStaffForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\ChartEmploymentStatusReport.resx">
+      <DependentUpon>ChartEmploymentStatusReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\IncreaseManagementReportForm.resx">
+      <DependentUpon>IncreaseManagementReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformanceAllDepartmentReportForm.resx">
+      <DependentUpon>PerformanceAllDepartmentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformanceByDepartmentReportForm.resx">
+      <DependentUpon>PerformanceByDepartmentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformancePercentReportForm.resx">
+      <DependentUpon>PerformancePercentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PerformanceReportForm.resx">
+      <DependentUpon>PerformanceReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonelShebaReportForm.resx">
+      <DependentUpon>PersonelShebaReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelChildsReportForm.resx">
+      <DependentUpon>PersonnelChildsReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelEmailListReportForm.resx">
+      <DependentUpon>PersonnelEmailListReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelLeaveReportForm.resx">
+      <DependentUpon>PersonnelLeaveReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelOfEachDepartmentReportForm.resx">
+      <DependentUpon>PersonnelOfEachDepartmentReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelReportForm.resx">
+      <DependentUpon>PersonnelReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelsFunctionReportForm.resx">
+      <DependentUpon>PersonnelsFunctionReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelsList1ReportForm.resx">
+      <DependentUpon>PersonnelsList1ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelsListReportForm.resx">
+      <DependentUpon>PersonnelsListReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\PersonnelsPayRollReportForm.resx">
+      <DependentUpon>PersonnelsPayRollReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\ReportForm.resx">
+      <DependentUpon>ReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\SakhtieKarReportForm.resx">
+      <DependentUpon>SakhtieKarReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\SecoundOverTimeReportForm.resx">
+      <DependentUpon>SecoundOverTimeReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\SettlementReport.resx">
+      <DependentUpon>SettlementReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\StaffPayrollReportForm.resx">
+      <DependentUpon>StaffPayrollReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\WebApplicantReportForm.resx">
+      <DependentUpon>WebApplicantReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ReportForms\WithoutOvertimePersonnelReportForm.resx">
+      <DependentUpon>WithoutOvertimePersonnelReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Jamsaz.PersonnlsApplication_10_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_12_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_13_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_14_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_15_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_16_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_2_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_3_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_4_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_5_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_6_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_7_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_8_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_9_TemporaryKey.pfx" />
+    <None Include="Jamsaz.PersonnlsApplication_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Accident.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.AnnouncementChange.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Applicant.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApplicantCourse.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApplicantsEducation.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApplicantSkill.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApplicantsWorkExperience.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Applicants_AdvancedSearchResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApprovalGroup.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApprovalGroupDetail.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ApprovalGroupPersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Bank.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.CategoriesIndexEvaluation.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ChangeType.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ChartEmploymentStatusResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Contact.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ContractType.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Department.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.DepartmentApprovalCategoryPersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.DepartmentPersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.DepartmentVersion.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.DiagramDegreeByGender.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.DiagramMaritualStatus.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.DigramPersonnelByGender.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.EidRegistration.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.EmployeeData.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Encouragement.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.EndDateOfPersonnelContractResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.EvaluationIndex.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.EvaluationStep.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ExcludePersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ExpertAssesment.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.FilterApplicantResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.FingerPrintImage.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.FiscalYear.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetAllStructurePersonelsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetComprehensivePersonnelReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetContactsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetCountPersonelReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetExitPersonelResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetHagheJazbResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetHagheSakhtieKarResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetHagheSarparstiResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetIncreaseManagementDetailResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetInputPersonelResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetKarkardResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetLeaveRequestStatusResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetOrganizationPostReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetOriginalDepartmentsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetOvertimeLicenseReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetOvertimeReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetOverTimeResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPaySanavatReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPercentResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelAccountNumberResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelByDegreeResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelChildsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelEmailListResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelLeaveResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelMissionResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.getPersonnelOfEachDepartmentResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelPayRollResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelRecordsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersonnelReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetPersounleCountResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetReportServiceKarkardResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetSanavatReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetSettlementReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetStaffPayrollResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetStructurePersonelsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.GetUnitsHaveStaffResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.HagheAyabZahabReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.HagheGhazaReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.IncreaseManagement.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.IncreaseManagementDetail.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.JamsazERPLiteDataClassesDataContext.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.LeaveRequest.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.LeaveRequestsReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Major.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.MartialStatusType.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.MilitaryServiceStatus.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Mission.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.MissionApprovalGroup.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.MissionApprovalGroupDetail.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.MissionApprovalGroupPersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.MonthTable.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OrganizationPost.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OrganizationStructure.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OrganizationStructurePersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OrganizationStructureVersion.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OriginalDepartment.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OvertimeLicense.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.OvertimeLicenseDetail.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PayRoll.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PerformanceAllDepartmentResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PerformanceByDepartmentResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PerformancEvaluationDetail.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PerformancEvaluationMaster.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonelBankAccount.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonelEvaluationByPercentResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonelOfExpertAsseement.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonnalsEducation.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Personnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonnelFingerPrint.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonnelMissionReportResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonnelNotEvaluatedResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.PersonnelyLogger.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Punishment.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Responsibility.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.ResultSearchAdvenced.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectChildDepartmentsPersonnelResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectPersonnelByMajorResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectPersonnelDecreeResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectPersonnels1Result.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectPersonnelsByBirthdayResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectPersonnelsResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SelectPersonnelWithoutOvertimeResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Settlement.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.SettlementCategory.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Sheet1_.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Telephone.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.TemplatePersonnelEducation.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.UniversityDegree.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.User.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.Valuator.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.vwAccountNumberPersonnely_SearchAdvancedResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.vwMainPersonnely.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.vwMainPersonnely_SearchAdvancedResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.vwPersonnels_FullSearchAdvancedResult.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.WithoutOvertimePersonnel.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.BusinessObjects.Data.workgroup.datasource" />
+    <None Include="Properties\DataSources\Jamsaz.PersonnlsApplication.Definitions.enumMaritualStatus.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reports\Stimul\EncouragementReport.mrt" />
+    <None Include="Reports\Stimul\ResumeReport.mrt" />
+    <None Include="Resources\ChangeTypeReport.mrt" />
+    <None Include="Resources\EncouragementReport.mrt" />
+    <None Include="Resources\FirstOverTimeReport.mrt" />
+    <None Include="Resources\l_add.gif" />
+    <None Include="Resources\PersonnelChildReport.mrt" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\Report.mrt" />
+    <None Include="Resources\secounOverTimeReport.mrt" />
+    <None Include="Resources\ServiceReport.mrt" />
+    <None Include="UI\app.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Personneli.ico" />
+    <None Include="Resources\microsoft_excel_16px.png" />
+    <Content Include="Resources\tree_diagramm.ico" />
+    <None Include="Resources\Users.png" />
+    <None Include="Resources\146.ico" />
+    <None Include="Resources\2users1.ico" />
+    <Content Include="Resources\119.ico" />
+    <Content Include="Resources\arm.jpg" />
+    <None Include="Resources\search1.png" />
+    <None Include="Resources\wait_ax.gif" />
+    <None Include="Resources\t_complete.gif" />
+    <None Include="Resources\SearchAll.gif" />
+    <None Include="Resources\qm-small-male.gif" />
+    <None Include="Resources\is_release.gif" />
+    <None Include="Resources\h_preferences.gif" />
+    <None Include="Resources\file find.ico" />
+    <None Include="Resources\favorits.ico" />
+    <None Include="Resources\arrow_up.gif" />
+    <None Include="Resources\arrow_down.gif" />
+    <None Include="Resources\check.png" />
+    <None Include="Resources\Business-Money-48.png" />
+    <None Include="Resources\billing.png" />
+    <Content Include="Resources\copy.ico" />
+    <None Include="Resources\edit.png" />
+    <None Include="Resources\free-for-job.png" />
+    <Content Include="Resources\customers.png" />
+    <Content Include="Resources\featured.png" />
+    <Content Include="Resources\home.ico" />
+    <None Include="Resources\kedit.png" />
+    <Content Include="Resources\Lock.png" />
+    <None Include="Resources\refresh.png" />
+    <None Include="Resources\l_cancel.gif" />
+    <None Include="Resources\People SH.bmp" />
+    <Content Include="Resources\save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="AMS.TextBox">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Build.Tasks.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.Build.Utilities.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.CoreUtility">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Data.Framework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.DataDesign.Common">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.DataDesign.DataSetDesigner">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.DataDesign.Interfaces">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Debugger.Interop.Internal">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Diagnostics.Assert">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Diagnostics.PerformanceProvider">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Editor">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.ExtensibilityHosting">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.ImageCatalog">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Imaging">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Language.Intellisense">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Package.LanguageService.14.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.14.0">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Shell.Design">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Text.Data">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Text.Logic">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Text.UI">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Text.UI.Wpf">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Threading">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Utilities">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.Validation">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VisualStudio.WizardFramework">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VSDesigner">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="Microsoft.VSDesigner.ExceptionAssistant.SmartTag">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Collections.Immutable">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="System.Threading.Tasks.Dataflow">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.10.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2010 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Jamsaz.PersonnlsApplication.BusinessObjects\Jamsaz.PersonnlsApplication.BusinessObjects.csproj">
+      <Project>{1F0557A0-F9DB-435A-9AF9-352FC3A7E609}</Project>
+      <Name>Jamsaz.PersonnlsApplication.BusinessObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
